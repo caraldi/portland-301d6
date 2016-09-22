@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <title>Seattle Neighborhood Data</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <script id="neighborhood-template" type="text/x-handbars-template">
+      <h2>{{name}}</h2>
+      <p>City of {{city}}</p>
+      <p>Population of {{population}}</p>
+      <p>Founded in {{founded}}</p>
+      // Remember: can get to attribute of object by dot notation
+      <p>Has a {{attraction.statue}}</p>
+      // To store results of js expression on Handlebars template and render results (what evaluates to), do it first (Handlebars only wants values: strings or numbers)
+    </script>
   </head>
   <body>
     <header class="site-header clearfix">
